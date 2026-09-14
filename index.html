@@ -20,8 +20,170 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-brand"><span class="fw-bold fs-3">EliteHomes</span></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#properties" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Properties
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="container">
+                                <li class="mb-3">
+                                    <div class="dropdown-item bg-dark-white p-3 rounded-3">
+                                        <p class="fw-bold fs-14 text-dark pb-2">Featured Properties</p>
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div class="d-flex align-items-center gap-2 bg-white rounded-3">
+                                                <img src="Images/luxury-villa.jpeg" class="dropdown-img rounded-3 "
+                                                    alt="">
+                                                <div>
+                                                    <p class="fw-medium fs-12 text-dark">luxury Villa</p>
+                                                    <p class="fw-normal fs-12 text-gray">$2.5M • 5 beds • 4 baths</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 bg-white rounded-3">
+                                                <img src="Images/modern-apartment.jpeg" class="dropdown-img rounded-3 "
+                                                    alt="">
+                                                <div>
+                                                    <p class="fw-medium fs-12 text-dark">Modern Apartment</p>
+                                                    <p class="fw-normal fs-12 text-gray">$850K • 2 beds • 2 baths</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mb-3 pb-3">
+                                    <div class="dropdown-item bg-dark-white p-3 rounded-3">
+                                        <p class="fw-bold fs-14 text-dark pb-2">Property Types
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a href="" class="fw-normal d-block fs-14 text-gray">
+                                                    <i class="fa-solid fa-house"></i>
+                                                    <span>Single Family Homes</span>
+                                                </a>
+                                                <a href="" class="fw-normal d-block fs-14 text-gray">
+                                                    <i class="fa-solid fa-warehouse"></i>
+                                                    <span>Condominiums</span>
+                                                </a>
+                                                <a href="" class="fw-normal d-block fs-14 text-gray">
+                                                    <i class="fa-solid fa-tree"></i>
+                                                    <span>Land & Lots</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="fw-normal d-block fs-14 text-gray">
+                                                    <i class="fa-solid fa-building"></i>
+                                                    <span>Apartments</span>
+                                                </a>
+                                                <a href="" class="fw-normal d-block fs-14 text-gray">
+                                                    <i class="fa-solid fa-store"></i>
+                                                    <span>Commercial</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown-item bg-dark-white p-3 rounded-3">
+                                        <p class="fw-bold fs-14 text-dark pb-2">Popular Locations</p>
+                                        <div class="d-flex justify-content-between">
+                                            <a href="#" class="d-block position-relative overflow-hidden rounded-3">
+                                                <div>
+                                                    <img src="Images/new-york.jpeg" class="location rounded-3" alt="">
+                                                </div>
+                                                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-main-opacity d-flex flex-column justify-content-center ps-3">
+                                                    <p class="fw-semibold fs14 text-white">New York</p>
+                                                    <p class="fw-normal fs-12 text-light-gray">2,145 Properties</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="d-block position-relative overflow-hidden rounded-3">
+                                                <div>
+                                                    <img src="Images/los-angeles.jpeg" class="location rounded-3" alt="">
+                                                </div>
+                                                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-main-opacity d-flex flex-column justify-content-center ps-3">
+                                                    <p class="fw-semibold fs14 text-white">Los Angeles</p>
+                                                    <p class="fw-normal fs-12 text-light-gray">1,873 Properties</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="d-block position-relative overflow-hidden rounded-3">
+                                                <div>
+                                                    <img src="Images/miami.jpeg" class="location miami rounded-3" alt="">
+                                                </div>
+                                                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-main-opacity d-flex flex-column justify-content-center ps-3">
+                                                    <p class="fw-semibold fs14 text-white">Miami</p>
+                                                    <p class="fw-normal fs-12 text-light-gray">1526 Properties</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dropdown-item bg-dark-white p-3 rounded-3">
+                                        <p class="fw-bold fs-14 text-dark pb-2">Popular Locations</p>
+                                        <div class="d-flex justify-content-between">
+                                            <a href="#" class="d-block position-relative overflow-hidden rounded-3">
+                                                <div>
+                                                    <img src="Images/new-york.jpeg" class="location rounded-3" alt="">
+                                                </div>
+                                                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-main-opacity d-flex flex-column justify-content-center ps-3">
+                                                    <p class="fw-semibold fs14 text-white">New York</p>
+                                                    <p class="fw-normal fs-12 text-light-gray">2,145 Properties</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="d-block position-relative overflow-hidden rounded-3">
+                                                <div>
+                                                    <img src="Images/los-angeles.jpeg" class="location rounded-3" alt="">
+                                                </div>
+                                                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-main-opacity d-flex flex-column justify-content-center ps-3">
+                                                    <p class="fw-semibold fs14 text-white">Los Angeles</p>
+                                                    <p class="fw-normal fs-12 text-light-gray">1,873 Properties</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="d-block position-relative overflow-hidden rounded-3">
+                                                <div>
+                                                    <img src="Images/miami.jpeg" class="location miami rounded-3" alt="">
+                                                </div>
+                                                <div class="position-absolute top-0 start-0 end-0 bottom-0 bg-main-opacity d-flex flex-column justify-content-center ps-3">
+                                                    <p class="fw-semibold fs14 text-white">Miami</p>
+                                                    <p class="fw-normal fs-12 text-light-gray">1526 Properties</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main>
         <!------------------------- home ---------------------------->
         <header id="home" class="d-flex align-items-center py-5 pb-lg-0">

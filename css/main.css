@@ -60,12 +60,15 @@ a {
 
 .cursor {
     cursor: pointer;
+
 }
 
 :root {
     --main-color: #7008e7;
+    --main-color-opacity: #7008e765;
     --sec-color: #4a5565;
     --light-gray: #F6F7F9;
+    --dark-white-color: #F9FAFB;
     --third-color: #1e2939;
     --green-color: #00a63e;
     --light-green-color: #dbfce7;
@@ -144,6 +147,12 @@ a {
 .bg-main {
     background-color: var(--main-color);
 }
+.bg-main-opacity {
+    background-color: var(--main-color-opacity);
+}
+.bg-dark-white {
+    background-color: var(--dark-white-color);
+}
 
 .bg-green {
     background-color: var(--green-color);
@@ -190,13 +199,25 @@ a {
 }
 
 
+/******************** navbar ************************/
+.dropdown-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+.location {
+    width: 130px;
+    height: 65px;
+    object-fit: fill;
+}
+.miami {
+    object-fit: cover;
+}
 /******************** home ************************/
 #home {
     background-image: linear-gradient(to right, #4d179acc, #59168bcc), url(../Images/hero-bg-img.png);
-    background-attachment: fixed;
     background-size: cover;
-    padding-top: 6.25rem;
-    background-position: 1px;
+    /* background-position: 1px; */
 }
 
 .search,
@@ -381,7 +402,7 @@ footer {
 }
 
 .accordion-header:hover .accordion-button {
-    background-color: #F9FAFB;
+    background-color: var(--dark-white);
 
 }
 
