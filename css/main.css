@@ -100,8 +100,9 @@ a {
 .text-white-opacity {
     color: rgba(255, 255, 255, 0.181);
 }
+
 .border-white-opacity {
-    border-color: rgba(255, 255, 255, 0.149)!important;
+    border-color: rgba(255, 255, 255, 0.149) !important;
 }
 
 .text-purple {
@@ -115,6 +116,7 @@ a {
 .text-gray {
     color: var(--sec-color);
 }
+
 .text-light-gray {
     color: var(--light-gray);
 }
