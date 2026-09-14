@@ -213,6 +213,10 @@ a {
 .miami {
     object-fit: cover;
 }
+#navbar .nav-item .nav-link:hover {
+    border: none;
+}
+
 /******************** home ************************/
 #home {
     background-image: linear-gradient(to right, #4d179acc, #59168bcc), url(../Images/hero-bg-img.png);
@@ -540,6 +544,11 @@ form .btn:hover {
 
     .container-fluid {
         width: 90%;
+        margin: auto;
+    }
+    .dropdown-menu.show {
+        translate: -800PX ;
+        width: 1200px;
         margin: auto;
     }
 }
