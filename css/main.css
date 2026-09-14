@@ -61,6 +61,7 @@ a {
 :root {
     --main-color: #7008e7;
     --sec-color: #4a5565;
+    --light-gray: #F6F7F9;
     --third-color: #1e2939;
     --green-color: #00a63e;
     --light-green-color: #dbfce7;
@@ -90,6 +91,10 @@ a {
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(to right bottom, var(--pink-color) 20%, var(--orange-color) 80%);
+}
+
+.text-white-opacity {
+    color: rgba(255, 255, 255, 0.181);
 }
 
 .text-purple {
@@ -148,6 +153,10 @@ a {
     background-color: #ede9fe;
 }
 
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
 .bg-orange {
     background-color: #e17100;
 }
@@ -178,7 +187,7 @@ a {
     background-position: 1px;
 }
 
-.search {
+.search, .contact-icons{
     background-image: linear-gradient(to right, #9810fa, #7f22fe);
 }
 
@@ -369,24 +378,30 @@ a {
 }
 
 /****************** contact ********************/
-.call ,.mail , .adress , .chat {
+.call,
+.mail,
+.adress,
+.chat {
     transition: all .4s;
 }
 
 .call:hover {
-    border-color: var(--purple-color)!important;
+    border-color: var(--purple-color) !important;
     transform: translateY(-5%);
 }
+
 .mail:hover {
-    border-color: var(--purple1-color)!important;
+    border-color: var(--purple1-color) !important;
     transform: translateY(-5%);
 }
+
 .adress:hover {
-    border-color: var(--dark-pink-color)!important;
+    border-color: var(--dark-pink-color) !important;
     transform: translateY(-5%);
 }
+
 .chat:hover {
-    border-color: var(--blue-color)!important;
+    border-color: var(--blue-color) !important;
     transform: translateY(-5%);
 }
 
@@ -396,6 +411,23 @@ a {
 
 .call:hover span {
     transform: scale(1.1);
+}
+
+.contact-icons a .fa-solid {
+    color: rgba(255, 255, 255, 0.181);
+    transition: color .3s;
+}
+.contact-icons a .fa-stack{
+    transition: transform .3s;
+
+}
+.contact-icons a:hover .fa-stack{
+    transform: scale(1.1);
+
+}
+.contact-icons a:hover .fa-solid{
+    color: rgba(255, 255, 255, 0.299);
+
 }
 
 /****************** media quary ********************/
