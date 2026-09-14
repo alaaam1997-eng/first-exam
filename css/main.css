@@ -200,6 +200,7 @@ a {
 
 
 /******************** navbar ************************/
+
 .dropdown-img {
     width: 2.5rem;
     height: 2.5rem;
@@ -219,9 +220,10 @@ a {
 
 /******************** home ************************/
 #home {
+    background-attachment: fixed;
     background-image: linear-gradient(to right, #4d179acc, #59168bcc), url(../Images/hero-bg-img.png);
     background-size: cover;
-    /* background-position: 1px; */
+    background-position: 1px;
 }
 
 .search,
@@ -551,4 +553,14 @@ form .btn:hover {
         width: 1200px;
         margin: auto;
     }
+    .location {
+        width: 268px;
+        height: 65px;
+    }
+    .dropdown-img {
+        width: 3rem;
+        height: 3rem;}
+        .dropdown-item {
+            background-color: #ffffff;
+        }
 }
