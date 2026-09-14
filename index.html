@@ -1005,8 +1005,12 @@
         </div>
     </section>
     <!--------------------- Contact ------------------------>
-    <section id="contact" class="bg-white pb-5">
+    <section id="contact" class="bg-white pb-5 position-relative overflow-hidden">
         <div class="container pt-5 pb-4">
+            <div class="corner-big corner-big-top position-absolute top-0 start-100 translate-middle d-none d-lg-block"></div>
+            <div class="corner-big corner-big-bottom position-absolute top-100 start-0 translate-middle d-none d-lg-block"></div>
+            <div class="corner-small corner-small-top position-absolute d-none d-lg-block"></div>
+            <div class="corner-small corner-small-bottom position-absolute d-none d-lg-block"></div>
             <div class="head py-5 text-center">
                 <div class="d-flex justify-content-center align-items-center gap-3">
                     <div class="h-styleS"></div>
@@ -1070,95 +1074,167 @@
                 </div>
 
             </div>
-            <address class="text-start p-4 bg-light-gray rounded-4 mt-5">
-                <h3 class="pb-4 fw-bold fs-4 text-dark pt-3">Contact Information</h3>
-                <div class="d-flex align-items-start gap-3 mb-4">
-                    <div>
+            <div class="row mt-2">
+                <div class="col-lg-4 pe-4">
+                <address class="text-start p-4 bg-light-gray rounded-4 mt-5">
+                    <h3 class="pb-4 fw-bold fs-4 text-dark pt-3">Contact Information</h3>
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div>
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white fa-square fa-stack-2x"></i>
+                                <i class="fa-solid fa-location-dot text-main fa-xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold fs-6 text-dark pb-2">Address</h4>
+                            <p class="fw-normal fs-14 text-gray">1234 Luxury Boulevard <br>Beverly Hills, CA 90210 </p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div>
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white fa-square fa-stack-2x"></i>
+                                <i class="fa-solid fa-phone text-main fa-xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold fs-6 text-dark pb-2">Phone</h4>
+                            <a href="#+1 (555) 123-4567" class="fw-normal d-block fs-14 text-gray">+1 (555) 123-4567</a>
+                            <a href="+1 (555) 987-6543" class="fw-normal d-block fs-14 text-gray">+1 (555) 987-6543</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-3 mb-4">
+                        <div>
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white fa-square fa-stack-2x"></i>
+                                <i class="fa-solid fa-envelope text-dark-pink fa-xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h4 class="fw-semibold fs-6 text-dark pb-2">Address</h4>
+                            <a href="mailto:info@elitehomes.com"
+                                class="fw-normal d-block fs-14 text-gray">info@elitehomes.com</a>
+                            <a href="mailto:support@elitehomes.com"
+                                class="fw-normal d-block fs-14 text-gray">support@elitehomes.com</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-3 mb-4">
                         <span class="fa-stack fa-xl">
                             <i class="fa-solid text-white fa-square fa-stack-2x"></i>
-                            <i class="fa-solid fa-location-dot text-main fa-xs fa-stack-1x fa-inverse"></i>
+                            <i class="fa-solid fa-clock text-blue fa-xs fa-stack-1x fa-inverse"></i>
                         </span>
+                        <div>
+                            <h4 class="fw-semibold fs-6 text-dark pb-2">Working Hours</h4>
+                            <p class="fw-normal fs-14 text-gray">Mon-Fri: 8:00 AM - 8:00 PM <br>Sat-Sun: 9:00 AM - 6:00
+                                PM
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="fw-semibold fs-6 text-dark pb-2">Address</h4>
-                        <p class="fw-normal fs-14 text-gray">1234 Luxury Boulevard <br>Beverly Hills, CA 90210 </p>
+                </address>
+                <div class="contact-icons p-4 rounded-4">
+                    <h3 class="fw-bold fs-5 text-white py-3 ms-2">Connect With Us</h3>
+                    <p class="fw-normal fs-14 text-light pb-3 ms-2">Follow us on social media for updates and insights
+                    </p>
+                    <div class="row gap-2 align-items-center pb-3">
+                        <a href="https://www.facebook.com/" class="col-2">
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
+                                <i class="fa-brands fa-facebook-f text-white fa-2xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.x.com/" class="col-2">
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
+                                <i class="fa-brands fa-twitter text-white fa-2xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/" class="col-2">
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
+                                <i class="fa-brands fa-instagram text-white fa-2xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.linkedin.com/" class="col-2">
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
+                                <i class="fa-brands fa-linkedin text-white fa-2xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.youtube.com/" class="col-2">
+                            <span class="fa-stack fa-xl">
+                                <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
+                                <i class="fa-brands fa-youtube text-white fa-2xs fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
                     </div>
-                </div>
-                <div class="d-flex align-items-start gap-3 mb-4">
-                    <div>
-                        <span class="fa-stack fa-xl">
-                            <i class="fa-solid text-white fa-square fa-stack-2x"></i>
-                            <i class="fa-solid fa-phone text-main fa-xs fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div>
-                        <h4 class="fw-semibold fs-6 text-dark pb-2">Phone</h4>
-                        <a href="#+1 (555) 123-4567" class="fw-normal d-block fs-14 text-gray">+1 (555) 123-4567</a>
-                        <a href="+1 (555) 987-6543" class="fw-normal d-block fs-14 text-gray">+1 (555) 987-6543</a>
-                    </div>
-                </div>
-                <div class="d-flex align-items-start gap-3 mb-4">
-                    <div>
-                        <span class="fa-stack fa-xl">
-                            <i class="fa-solid text-white fa-square fa-stack-2x"></i>
-                            <i class="fa-solid fa-envelope text-dark-pink fa-xs fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </div>
-                    <div>
-                        <h4 class="fw-semibold fs-6 text-dark pb-2">Address</h4>
-                        <a href="mailto:info@elitehomes.com" class="fw-normal d-block fs-14 text-gray">info@elitehomes.com</a>
-                        <a href="mailto:support@elitehomes.com"
-                            class="fw-normal d-block fs-14 text-gray">support@elitehomes.com</a>
-                    </div>
-                </div>
-                <div class="d-flex align-items-start gap-3 mb-4">
-                    <span class="fa-stack fa-xl">
-                        <i class="fa-solid text-white fa-square fa-stack-2x"></i>
-                        <i class="fa-solid fa-clock text-blue fa-xs fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <div>
-                        <h4 class="fw-semibold fs-6 text-dark pb-2">Working Hours</h4>
-                        <p class="fw-normal fs-14 text-gray">Mon-Fri: 8:00 AM - 8:00 PM <br>Sat-Sun: 9:00 AM - 6:00 PM
-                        </p>
-                    </div>
-                </div>
-            </address>
-            <div class="contact-icons p-4 rounded-4">
-                <h3 class="fw-bold fs-5 text-white py-3 ms-2">Connect With Us</h3>
-                <p class="fw-normal fs-14 text-light pb-3 ms-2">Follow us on social media for updates and insights</p>
-                <div class="row gap-2 align-items-center pb-3">
-                    <a href="https://www.facebook.com/" class="col-2">
-                        <span class="fa-stack fa-xl">
-                            <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
-                            <i class="fa-brands fa-facebook-f text-white fa-2xs fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.x.com/" class="col-2">
-                        <span class="fa-stack fa-xl">
-                            <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
-                            <i class="fa-brands fa-twitter text-white fa-2xs fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.instagram.com/" class="col-2">
-                        <span class="fa-stack fa-xl">
-                            <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
-                            <i class="fa-brands fa-instagram text-white fa-2xs fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.linkedin.com/" class="col-2">
-                        <span class="fa-stack fa-xl">
-                            <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
-                            <i class="fa-brands fa-linkedin text-white fa-2xs fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a href="https://www.youtube.com/" class="col-2">
-                        <span class="fa-stack fa-xl">
-                            <i class="fa-solid text-white-opacity fa-square fa-stack-2x"></i>
-                            <i class="fa-brands fa-youtube text-white fa-2xs fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
                 </div>
             </div>
+            <div class="col-lg-8 p-4 mt-lg-5 my-4 border rounded-4">
+                <h3 class="fw-bold fs-30 text-dark">Send us a message</h3>
+                <p class="fw-normal fs-6 text-gray">Fill out the form below and we'll get back to you as soon as
+                    possible</p>
+                <form class="row">
+                    <div class="col-lg-6">
+                        <label for="Fname" class="d-block fw-semibold fs-6 text-gray">First Name<span>*</span></label>
+                        <input type="text" id="Fname"
+                            class="d-block w-100 px-4 py-3 bg-light-gray rounded-4 my-3 border" name="Fname" required
+                            placeholder="Jhon">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="Lname" class="d-block fw-semibold fs-6 text-gray">First Name<span>*</span></label>
+                        <input type="text" id="Lname"
+                            class="d-block w-100 px-4 py-3 bg-light-gray rounded-4 my-3 border" name="Lname" required
+                            placeholder="Doe">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="mail" class="d-block fw-semibold fs-6 text-gray">Email Address<span>*</span></label>
+                        <input type="email" id="mail"
+                            class="d-block w-100 px-4 py-3 bg-light-gray rounded-4 my-3 border" name="mail" required
+                            placeholder="jhon@example.com">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="phone" class="d-block fw-semibold fs-6 text-gray">Phone Number</label>
+                        <input type="tel" id="phone" class="d-block w-100 px-4 py-3 bg-light-gray rounded-4 my-3 border"
+                            name="phone" placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="service" class="d-block fw-semibold fs-6 text-gray">I'm interested in</label>
+                        <select name="service" id="service"
+                            class="d-block w-100 px-4 py-3 bg-light-gray rounded-4 my-3 border">
+                            <option value="">Select a service</option>
+                            <option value="buying">Buying a home</option>
+                            <option value="selling">Selling a home</option>
+                            <option value="renting">Renting a property</option>
+                            <option value="investment">Investment opportunities</option>
+                            <option value="commercial">Commercial real estate</option>
+                            <option value="prop-manage">Property management</option>
+                            <option value="market-cons">Market consultation</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12">
+                        <label for="message" class="d-block fw-semibold fs-6 text-gray">Your Message
+                            <span>*</span></label>
+                        <textarea name="message" id="message"
+                            class="d-block w-100 px-4 py-3 bg-light-gray rounded-4 my-3 border h-10"
+                            placeholder="Tell us about your real estate needs..." required></textarea>
+                    </div>
+                    <div class="col-lg-12 form-check d-flex gap-3 px-3 py-3 bg-light-gray rounded-4 my-3">
+                        <input class="form-check-input ms-1 cursor" type="checkbox" id="inlineCheckbox1"
+                            value="option1">
+                        <label class="form-check-label fw-semibold fs-6 text-gray cursor" for="inlineCheckbox1">I agree
+                            to receive marketing
+                            communications and updates from EliteHomes</label>
+                    </div>
+                    <button type="submit" class="col-lg-12 btn w-100 bg-main py-3 rounded-4">
+                        <span class="fw-bold fs-18 text-white ">Send Message</span>
+                        <i class="fas fa-paper-plane fa-lg text-white"></i>
+                    </button>
+                    <p class="fw-normal fs-14 text-gray pt-3">We respect your privacy. Your information will never be
+                        shared.</p>
+                </form>
+            </div>
+            </div>
+            
         </div>
 
     </section>
